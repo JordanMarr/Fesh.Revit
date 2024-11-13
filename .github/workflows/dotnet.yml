@@ -21,4 +21,4 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Run CI
-      run: dotnet run Build/Build.fsproj
+      run: dotnet run --project Build
