@@ -22,3 +22,8 @@ jobs:
         dotnet-version: 8.0.x
     - name: Run CI
       run: dotnet run --project Build
+    - name: Archive .msi installer
+      uses: actions/upload-artifact@v4
+      with:
+        name: msi-installer
+        path: .build/*.msi
